@@ -1,4 +1,5 @@
-import React from "react";
+import Footer from '../Home/Footer'
+import { Link } from "react-router-dom";
 
 const Jobcreate = ({
   cname,
@@ -109,7 +110,11 @@ const Jobcreate = ({
             </div>
           </div>
         </form>
+        <div className="finalpost">
+          <button>Job post</button> 
+        </div>
       </div>
+      <Footer/>
     </div>
   );
 };
