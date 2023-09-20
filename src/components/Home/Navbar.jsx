@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom'
-// import { Link } from '@mui/material'
 import '../../index.css'
 
 const Navbar = () => {
   return (
     <div className="navs">
       <div className="navbar">
-       <Link to='/'>JobsPortal</Link>
+       <Link to='/' style={{fontSize:"22px",color:"rgb(49, 83, 49)",fontWeight:"bold"}}>JobsPortal</Link>
       </div>
       <div className="navbar">
         <Link to='/login' className='posts'>Login</Link>

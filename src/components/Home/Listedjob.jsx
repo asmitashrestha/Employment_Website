@@ -5,7 +5,7 @@ const Listedjob = () => {
    
       <div className="lists">
         <div className="pops">
-          <h1>All Popular Listed jobs</h1>
+          <h1 style={{fontSize:"22px",fontWeight:"bold",color:"rgb(49, 83, 49)"}}>All Popular Listed jobs</h1>
         </div>
       </div>
     

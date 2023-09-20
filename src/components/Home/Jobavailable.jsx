@@ -1,8 +1,21 @@
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-const Jobstitle = ({ para, title }) => {
+const Jobavailable = ({ para, title }) => {
+  const [users, setUsers] = useState([])
+
+  useEffect(() => {
+    fetch("https://dummyjson.com/products")
+      .then(res => {
+        return res.json()
+      })
+      .then(data => {
+        console.log(data)
+      })
+  },[])
+  
   return (
     <div className="pop-list">
       <div className="circle">
@@ -36,4 +49,4 @@ const Jobstitle = ({ para, title }) => {
   );
 };
 
-export default Jobstitle;
+export default Jobavailable;

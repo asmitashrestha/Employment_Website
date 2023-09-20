@@ -1,5 +1,5 @@
 import React from 'react'
-import Jobstitle from './Jobstitle'
+import Jobavailable from './Jobavailable'
 import View from './View'
 import Listedjob from './Listedjob'
 import CategoryItem from './CategoryItem'
@@ -32,31 +32,31 @@ const Homefinal = () => {
       <Listedjob />
       <div className="listed">
         <div className="list">
-          <Jobstitle
+          <Jobavailable
             para="Match Company Limited"
             title="Fresher UI/UX Designer (3 Year Exp.)"
           />
         </div>
         <div className="list">
-          <Jobstitle
+          <Jobavailable
             para="Match Company Limited"
             title="Fresher UI/UX Designer (3 Year Exp.)"
           />
         </div>
         <div className="list">
-          <Jobstitle
+          <Jobavailable
             para="Match Company Limited"
             title="Fresher UI/UX Designer (3 Year Exp.)"
           />
         </div>
         <div className="list">
-          <Jobstitle
+          <Jobavailable
             para="Match Company Limited"
             title="Fresher UI/UX Designer (3 Year Exp.)"
           />
         </div>
         <div className="list">
-          <Jobstitle
+          <Jobavailable
             para="Match Company Limited"
             title="Fresher UI/UX Designer (3 Year Exp.)"
           />
