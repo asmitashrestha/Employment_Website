@@ -1,4 +1,5 @@
-import React from 'react'
+import axios from "axios"
+import { useEffect, useState } from 'react'
 import Jobavailable from './Jobavailable'
 import View from './View'
 import Listedjob from './Listedjob'
@@ -7,8 +8,20 @@ import Categories from './Categories'
 import Navbar from './Navbar'
 import Home from './Home'
 import Footer from './Footer'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Homefinal = () => {
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    axios.get('https://dummyjson.com/products')
+      .then(res => {
+        setProducts(res.data.products)
+        console.log(res.data.products)
+      })
+  }, [])
+
   return (
     <div>
       <Navbar />
@@ -30,41 +43,25 @@ const Homefinal = () => {
       </div>
 
       <Listedjob />
-      <div className="listed">
-        <div className="list">
-          <Jobavailable
-            para="Match Company Limited"
-            title="Fresher UI/UX Designer (3 Year Exp.)"
-          />
+        
+          {
+            products.length == 0
+            &&
+            <>
+              <Skeleton height={100} />
+              <Skeleton height={100} />
+              <Skeleton height={100} />
+              <Skeleton height={100} />
+            </>
+          }
+          
+             {
+              products.map((product) => {
+                return <Jobavailable  key={product.id} salary={product.price} para={product.title} title={product.category}/>
+                
+              })
+            }
         </div>
-        <div className="list">
-          <Jobavailable
-            para="Match Company Limited"
-            title="Fresher UI/UX Designer (3 Year Exp.)"
-          />
-        </div>
-        <div className="list">
-          <Jobavailable
-            para="Match Company Limited"
-            title="Fresher UI/UX Designer (3 Year Exp.)"
-          />
-        </div>
-        <div className="list">
-          <Jobavailable
-            para="Match Company Limited"
-            title="Fresher UI/UX Designer (3 Year Exp.)"
-          />
-        </div>
-        <div className="list">
-          <Jobavailable
-            para="Match Company Limited"
-            title="Fresher UI/UX Designer (3 Year Exp.)"
-          />
-        </div>
-      </div>
-      <View />
-      <Footer />
-    </div>
   )
 }
 

@@ -14,12 +14,12 @@ const Login = () => {
     e.preventDefault()
     console.log('api called')
 
-    fetch('https://dummyjson.com/auth/login', {
+    fetch('https://fakestoreapi.com/auth/login', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        // username: "atuny0",
-        // password: "9uQFF1Lh",
+        // username: "mor_2314",
+        // password: "83r5^_"
         "username": e.target.name.value,
         "password": e.target.password.value, 
 

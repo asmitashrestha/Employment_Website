@@ -207,23 +207,7 @@
   width: 1300px;
   background-color: rgb(255, 255, 249);
   margin-top: 1.3rem;
-}
-
-.listed{
-  margin-top:40px ;
-  background-color: rgb(255, 255, 249);
-}
-
-.list{
-  position: relative;
-  border: 1px solid grey;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top:22px ;
-  width: 1210px;
-  height: 130px; 
-  border-radius: 1rem;
-  box-shadow:0.5px 1.5px #b9beb9;
+  margin-bottom: 2.5rem;
 }
 
 .pops{
@@ -234,6 +218,11 @@
   padding-top: 50px;
   position: relative;
   display: block;
+  margin-top:18px;
+  height: 130px;
+  border: 1px solid rgb(182, 171, 171);
+  border-radius: 9px;
+  box-shadow: 3px 3px 4px 3px rgb(148, 142, 142) ;
 }
 .circle{
   position: absolute;
@@ -268,7 +257,7 @@
 }
 .para{
   font-size: 14px;
-  color: #767976;
+  color: #414441;
   padding-bottom: 3px;
 }
 .tit-desc{

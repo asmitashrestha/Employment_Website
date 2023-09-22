@@ -2,20 +2,10 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
-const Jobavailable = ({ para, title }) => {
-  const [users, setUsers] = useState([])
-
-  useEffect(() => {
-    fetch("https://dummyjson.com/products")
-      .then(res => {
-        return res.json()
-      })
-      .then(data => {
-        console.log(data)
-      })
-  },[])
-  
+const Jobavailable = ({ para, title,salary }) => {
   return (
     <div className="pop-list">
       <div className="circle">
@@ -33,7 +23,7 @@ const Jobavailable = ({ para, title }) => {
               <FullscreenExitIcon />  Full Time
             </span>
             <span>
-              Ksh 9,00,000
+              Ksh {salary}
             </span>
           </p>
         </div>
