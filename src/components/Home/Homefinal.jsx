@@ -61,6 +61,9 @@ const Homefinal = () => {
                 
               })
             }
+
+            <View/>
+            <Footer/>
         </div>
   )
 }

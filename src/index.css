@@ -224,6 +224,7 @@
   border-radius: 9px;
   box-shadow: 3px 3px 4px 3px rgb(148, 142, 142) ;
 }
+
 .circle{
   position: absolute;
   left: 0;
@@ -347,7 +348,14 @@
 .footer p{
   padding-left: 4px;
   color: #fff;
-  font-style: 17px;
+  font-size: 17px;
+}
+
+@media screen and (min-width: 478px) and (max-width: 767px) {
+  /* Apply styles to <p> tags within this range */
+  .footer p {
+    text-align: left;
+  }
 }
 
 
