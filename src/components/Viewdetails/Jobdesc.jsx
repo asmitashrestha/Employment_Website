@@ -46,13 +46,6 @@ const Jobdesc = ({edu,exp,explen,location,deadline,salary}) => {
                 <li>A degree in programming computer science , or a related filed </li>
                 <li>A degree in programming computer science , or a related filed</li>
                 <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
             </ul>
         </div>
 
@@ -61,13 +54,6 @@ const Jobdesc = ({edu,exp,explen,location,deadline,salary}) => {
             <div className="responsibility">
             <ul>
                 <li>A degree in programming computer science , or a related filed </li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
-                <li>A degree in programming computer science , or a related filed</li>
                 <li>A degree in programming computer science , or a related filed</li>
                 <li>A degree in programming computer science , or a related filed</li>
             </ul>

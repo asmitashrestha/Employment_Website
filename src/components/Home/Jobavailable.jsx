@@ -8,7 +8,7 @@ import 'react-loading-skeleton/dist/skeleton.css'
 const Jobavailable = ({ para, title,salary }) => {
   return (
     <div className="pop-list">
-      <div className="circle">
+      <div className="circle"> 
         <p>J</p>
       </div>
       <div className="desc">

@@ -18,7 +18,6 @@
   margin-left: 0.9rem;
   text-align: center;
   padding: 0;
-
 }
 
 .navbar{
@@ -111,7 +110,7 @@
   width:6.5rem;
   border-radius: 0.5rem;
   border: none;
-  background-color:  rgb(48, 96, 48);
+  background-color: rgb(49, 83, 49);
   color: white;
   font-weight: 700;
   font-size: 1rem;
@@ -217,7 +216,9 @@
 .pop-list{
   padding-top: 50px;
   position: relative;
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  width:1220px;
   margin-top:18px;
   height: 130px;
   border: 1px solid rgb(182, 171, 171);
@@ -229,14 +230,14 @@
   position: absolute;
   left: 0;
   top: 25px;
-  margin-left:2.8rem;
+  margin-left:2rem;
   border-radius: 50%;
   width: 34px;
   height: 34px;
   padding: 35px;
   background: #fff;
   border: none;
-  background-color:rgb(48, 96, 48) ;
+  background-color:rgb(49, 83, 49);
   font-size: 22px;
   font-weight: 500;
   display: flex;
@@ -252,7 +253,7 @@
 
 .desc{
   position: absolute;
-  left: 160px;
+  left: 130px;
   top:20px;
   text-align: justify;
 }
@@ -263,7 +264,7 @@
 }
 .tit-desc{
   font-size: 22px;
-  color: black;
+  color: rgb(49, 83, 49);
 }
 
 .location{
@@ -280,14 +281,14 @@
 
 .btn-view{
   position: absolute;
-  left: 1010px;
-  top: 41px;
+  left: 1030px;
+  top: 48px;
 }
 
 .view-btn{
   color: white;
-  background-color: rgb(48, 96, 48) ;
-  padding: 15px 30px;
+  background-color: rgb(49, 83, 49);
+  padding: 20px 30px;
   font-size: 16px;
   border: none;
   border-radius: 10px;
@@ -307,7 +308,7 @@
 .view button{
   position: absolute;
   left: 530px;
-  background-color:  rgb(48, 96, 48);
+  background-color:  rgb(49, 83, 49);
   padding: 16px 45px;
   color: #fff;
   font-size: 16px;
@@ -323,7 +324,7 @@
   width:24px;
   height: 24px;
   margin-left: 80px;
-  background-color:rgb(48, 96, 48) ;
+  background-color:rgb(49, 83, 49);
   border:1px solid #fff;
   justify-content: center;
   display: flex;
@@ -340,7 +341,7 @@
   align-items: center;
   height: 71px;
   width: 1300px;
-  background-color:rgb(48, 96, 48) ;
+  background-color:rgb(49, 83, 49);
   color: #fff;
 }
 
@@ -348,7 +349,7 @@
 .footer p{
   padding-left: 4px;
   color: #fff;
-  font-size: 17px;
+  font-size: 17px; 
 }
 
 @media screen and (min-width: 478px) and (max-width: 767px) {
@@ -563,7 +564,7 @@
 }
 .finalpost button{
   color: white;
-  background-color: rgb(48, 96, 48);
+  background-color: rgb(49, 83, 49);
   padding: 10px 40px;
   border-radius: 0.5rem;
 }
